@@ -110,7 +110,7 @@ def prediction_fct(infile, win, out_file_path):
     labels = [0, 1]
 
 # svm
-    clf = svm.SVC(gamma=0.001, kernel='linear', C=1.0)
+    clf = svm.SVC(gamma=0.1, kernel='linear', C=1.0)
     cvs_svm = cross_val_score(clf, seq, top, cv=cross_val, n_jobs=-1)
     cvs_svm_mean = cvs_svm.mean()
     print('SVM cross-val score', cvs_svm_mean)
@@ -145,7 +145,7 @@ def prediction_fct(infile, win, out_file_path):
     rfc_confusionm = confusion_matrix(y_test, y_test_top_predicted_rfc, labels)
     rfc_mcc = matthews_corrcoef(y_test, y_test_top_predicted_rfc)
 
-    with open(out_file_path + 'train_test_' + str(win) + 'winsize_algorithm_svm_tree_rfc_results.txt', 'w') as out_file:
+    with open(out_file_path + 'first50' + str(win) + 'winsize_algorithm_svm_tree_rfc_results.txt', 'w') as out_file:
         out_file.write('Cross-validation scores for SVC: ' + str(cvs_svm_mean)+ '\n')
         out_file.write('Cross-validation scores for DecisionTreeClassifier: '+ str(cvs_tree_mean)+ '\n')
         out_file.write('Cross-validation scores for RandomForestClassifier: '+ str(cvs_rfc_mean)+ '\n')
@@ -162,5 +162,5 @@ def prediction_fct(infile, win, out_file_path):
 
     return 'done...'
 if __name__ == '__main__':
-    (np_savez('../datasets/membrane-alpha_2state.3line_train_test.txt', 19, '../numpy/svm_input'))
-    print(prediction_fct('../numpy/svm_input.npz', 19, '../output/WIN_ALGO_OPTI/'))
+    (np_savez('../datasets/membrane-alpha_2state.3line_50.txt', 25, '../numpy/first50_svm_input'))
+    print(prediction_fct('../numpy/first50_svm_input.npz', 25, '../output/WIN_ALGO_OPTI/'))

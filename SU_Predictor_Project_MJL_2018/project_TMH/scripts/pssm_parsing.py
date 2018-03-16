@@ -49,11 +49,12 @@ def readin_pssm(window):
         if file.endswith(".pssm"):
             ids = (os.path.join(file))
         input_id.append(ids)
+    #return input_id    
         
-        return(input_id)
 
     for ID in input_id:
-        pssm = '../datasets/PSSM_files/PSSMs/' + ID + '.fasta.pssm' #all pssm locationssms
+        print(ID)
+        pssm = os.path.join('../datasets/PSSM_files/PSSMs/' + ID) #+ #'.fasta.pssm' #all pssm locationssms
         pssm_list_train.append(np.genfromtxt(ids, skip_header=3, skip_footer=5, usecols=range(22,42)))
     
     X_train = pssm_list_train
@@ -87,8 +88,9 @@ def pssm_train(x, y):
     
     
     return  
-'''            
+          
            
 if __name__ == '__main__':  
     #input_id, input_seq, input_top  = data_input('../datasets/membrane-alpha_2state.3line_train_test.txt')
-    print(train_pssm(19)) #called with window size 19
+    print(readin_pssm(19))  
+    #print(train_pssm(19)) #called with window size 19

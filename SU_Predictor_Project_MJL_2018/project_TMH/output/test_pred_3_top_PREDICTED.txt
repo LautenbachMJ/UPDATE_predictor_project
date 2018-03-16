@@ -1,0 +1,33 @@
+Status: Prediction run is complete!
+                   
+                        .="=.
+                      _/.-.-.\_     _
+                     ( ( o o ) )    ))
+                      |/  "  \|    //
+      .-------.        "---"/    //
+     _|~~ ~~  |_       /`MJL`\  ((
+   =(_|_______|_)=    / /_,_\ \  \
+     |:::::::::|      \_\_"__/ \  ))
+     |:::::::[]|       /`  /`~\  |//
+     |o=======.|      /   /    \  /
+     `"""""""""`  ,--`,--"\/\    /
+                   "-- "--"  "--" 
+                    
+       I did the work for you and predicted all the topologies for you.
+                   
+            Have a good day and now you can monkey around!
+            
+Please find the prediction results below:
+
+>my test pred 10
+YLIYNYLIYN
+GGGGGGGGGG
+>my test pred 5
+KHETQ
+GGGGG
+>my test pred 15
+IYNYLGDSLSDAGQF
+GGGGGGGGGGGGGGG
+>5C5X:A|PDBID|CHAIN|SEQUENCE
+MKKEVCSVAFLKAVFAEFLATLIFVFFGLGSALKWPSALPTILQIALAFGLAIGTLAQALGPVSGGHINPAITLALLVGNQISLLRAFFYVAAQLVGAIAGAGILYGVAPLNARGNLAVNALNNNTTQGQAMVVELILTFQLALCIFASTDSRRTEPVGSPALSIGLSVTLGHLVGIYFTGCSMNPARSFGPAVVMNRFSPAHWVFWVGPIVGAVLAAILYFYLLFPNSLSLSERVAIIKGT
+GGGGGGGGGMMMMMMMMMMMMMMMMMMMMMGGGGGGGGGMMMMMMMMMMMMMMMMMMMMMGGGGGGGGGGMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMGGGGGGGGGGGGGGGGGGGGGGGMMMMMMMMMMMMMMMGGGGGGGGGGGGGGGGGGMMMMMMMMMMMMMMMGGGGGGGGGGGGGGGGGGGGGGGGGGGMMMMMMMMMMMMMMMMMMMMGGGGGGGGGGGGGGGG

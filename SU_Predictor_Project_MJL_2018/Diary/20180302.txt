@@ -1,0 +1,30 @@
+Today I fixed the problem of the sliding window, which was not adjustable. I hardcoded the padding with 1, which worked for window size 3 but not for bigger window sizes.
+I still have a problem with the prediction and the reencoding.
+
+An idea how to input a sequence for topology prediction:
+
+import pickle
+
+def predictor(model, sequence):
+    filehandle = open(sequence,'r')
+    loaded_model = pickle.load(open(model, 'rb'))
+    
+    lines = [line.strip() for line in filehandle]
+    seq_test = lines[0:]
+    print(seq_test)
+    
+    result = loaded_model.predict(seq_test)
+    print(result)
+    '''   
+    results = list(result)
+    for n, i in enumerate(results):
+        if i == 0:
+            results[n] = 'g'
+        else:
+            results[n] = 'B'
+            
+    return results
+     '''
+if __name__ == '__main__':
+    #print(input_convertion('testdataset_aa_seq_one.txt'))
+    print(predictor('model.sav', 'test_pred_seq.txt')) 

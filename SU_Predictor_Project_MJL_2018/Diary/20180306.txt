@@ -1,0 +1,36 @@
+cross validation/svc
+
+screenshots
+
+1. cross validation on the whole data set from monday evening, window size=31, cross_val fold=5, accuracy 0.80112737116
+
+all following runs are made with the 10 sequence dataset:
+
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='linear',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+
+
+
+2. cross validation on dataset 10 - window size= 31, cross_val fold=5, accuracy=0.780093402489
+
+3. cross val fold=5, window size= 31, accuracy=0.780093402489, time=real	1m7.388s
+
+
+4. cross val fold=7, window size=31, accuracy=0.791457531234, time=real	1m36.618s
+
+5. cross val fold=9, window size=31, accuracy=0.79819474924, time=real	2m8.045s
+
+6. cross val fold=17, window size=31, accuracy=0.80124602211, time=real	4m3.632s
+
+7. cross val fold=27, window size=31, accuracy=0.805507322519, time= real	6m36.265s
+
+
+- updating git hub and reorganising the directory structure
+
+
+on whole data set
+
+8. cross val fold= 27, window size=31, accuracy=0.80707701459   , time=real	575m6.744s
+

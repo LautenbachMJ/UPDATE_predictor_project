@@ -1,0 +1,33 @@
+Todays diary
+
+
+seperate file to read in and decode the dataset for the model prediction
+    the svm.fit does not function and returns:
+     
+     File "predictor_all.py", line 205, in <module>
+    print(svm_fct('../numpy/svm_input.npz','../output/model.sav'))
+  File "predictor_all.py", line 178, in svm_fct
+    clf = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(X,Y) 
+  File "/home/u2360/.local/lib/python3.5/site-packages/sklearn/svm/base.py", line 149, in fit
+    X, y = check_X_y(X, y, dtype=np.float64, order='C', accept_sparse='csr')
+  File "/home/u2360/.local/lib/python3.5/site-packages/sklearn/utils/validation.py", line 573, in check_X_y
+    ensure_min_features, warn_on_dtype, estimator)
+  File "/home/u2360/.local/lib/python3.5/site-packages/sklearn/utils/validation.py", line 433, in check_array
+    array = np.array(array, dtype=dtype, order=order, copy=copy)
+ValueError: setting an array element with a sequence.
+
+
+I DON'T KNOW WHY!!!!!! - without that I can't create a model and thus not predict anything
+
+
+otherwise, I think my code is quite clean and organised because I removed many confusing comments and print statements
+
+I created a seperate predictor_readin file which is the base for the other seperate predictor_only file.
+The predictor_only file just needs the input fasta sequence and returns the input ID, the input SEQ and the predicted topology for each of the sequences of that input fastafile (+ creates a .txt file with the predicted topology).
+
+
+
+
+
+
+

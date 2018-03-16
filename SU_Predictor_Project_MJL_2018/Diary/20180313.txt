@@ -1,0 +1,50 @@
+I modified my model_creator file to have a pure testing file, which can be used for cross-validation, grid-scoring and optimization - svm_model_creator_optimisation.py
+    content:    data read in,
+                encoding
+                saving encoded input data into np file
+                training and prediction with different algorithms (SVM, DecisionTree, RandomForest)
+                saving in a separate txt-file of:
+                    Cross-validation scores
+                    Matthews correlation coefficient
+                    Classification report Confusion matrix         
+
+Grid-Scoring to find the best svm parameters for the SVM file grid_search.py (coding help from lucie)
+    creates for every tested window in range a separate cvs file with all tested parameters
+    
+    
+    
+Window size testing: cross vall score with 10 seq dataset
+15  SVM 0.759049044344
+    Tree 0.69615882517
+    RFC 0.699321393822
+33  SVM 0.766519071884
+    Tree 0.68495728821
+    RFC 0.691275004535
+31  SVM 0.768245683471
+    Tree 0.69500775078
+    RFC 0.69242772803
+29  SVM 0.771114711654
+    Tree 0.68840391497
+    RFC 0.692423192995
+27  SVM 0.771970596481
+    Tree 0.67978487442
+    RFC 0.690983113178
+25  SVM 0.776278055377
+    Tree 0.68352298026
+    RFC 0.694722868121
+23  SVM 0.771970184205
+    Tree 0.68667647883
+    RFC 0.686972905226
+21  SVM 0.764503867148
+    Tree 0.68811284816
+    RFC 0.692419482511
+19  SVM 0.768526031102
+    Tree 0.69098270090
+    RFC 0.694139909959
+17  SVM 0.771395883837
+    Tree 0.69127500453
+    RFC 0.695870232029
+15  SVM 0.759049044344
+    Tree 0.69932427975
+    RFC 0.699033625225
+

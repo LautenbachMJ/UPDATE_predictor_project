@@ -1,0 +1,16 @@
+all of the following runs use the 10 sequence data set
+
+1. cross-val fold=5, windowsize=31, accuracy= 0.780093402489
+2. cross-val fold=5, windowsize=3, accuracy= 0.749711538195
+3. cross-val fold=5, windowsize=9, accuracy= 0.754905145068
+4. cross-val fold=5, windowsize=35, accuracy=0.77373910614
+5. cross-val fold=5, windowsize=33, accuracy=0.777974871712
+6. cross-val fold=5, windowsize=31, accuracy=0.780093402489
+7. cross-val fold=5, windowsize=29, accuracy=0.778746320707
+8. cross-val fold=5, windowsize=27, accuracy=0.775862258457
+9. cross-val fold=5, windowsize=27, accuracy=0.773557523309
+
+
+
+
+

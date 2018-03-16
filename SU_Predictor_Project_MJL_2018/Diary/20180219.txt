@@ -1,0 +1,23 @@
+Dear Diary,
+Today I created the required bash file that creates a directory structure for future projects.
+I also learned (Maria taught me) how to edit, commit and push files onto my github account.
+
+I'm really motivated and looking forward to my next entry tomorrow,
+
+Julius
+
+
+
+               ',
+            .-`-,\__
+              ."`   `,
+            .'_.  ._  `;.
+        __ / `      `  `.\ .--.
+       /--,| 0)   0)     )`_.-,)
+      |    ;.-----.__ _-');   /
+       '--./         `.`/  `"`
+          :   '`      |.      
+          | \     /  //         
+           \ '---'  /'        
+            `------' \  
+jgs/a:f      _/       `--...

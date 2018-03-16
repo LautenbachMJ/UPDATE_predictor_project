@@ -1,0 +1,36 @@
+Dear Diary,
+
+Today I created the parser file to parse the input dataset.
+
+key steps:
+- opening all the necessary files,dicts and lists
+- stip the lines in the file and sort the lines into lists
+- zip the lists into two dictionaries         
+- merge the dictionaries together with one key 
+- to request/test a specific key use: return dictionary['key']
+
+
+                __------__
+              /~          ~\
+             |    //^\\//^\|
+           /~~\  ||  o| |o|:~\
+          | |6   ||___|_|_||:|
+           \__.  /      o  \/'
+            |   (       O   )
+   /~~~~\    `\  \         /
+  | |~~\ |     )  ~------~`\
+ /' |  | |   /     ____ /~~~)\
+(_/'   | | |     /'    |    ( |
+       | | |     \    /   __)/ \
+       \  \ \      \/    /' \   `\
+         \  \|\        /   | |\___|
+           \ |  \____/     | |
+           /^~>  \        _/ <
+          |  |         \       \
+          |  | \        \        \
+          -^-\  \       |        )
+               `\_______/^\______/
+
+
+julius
+

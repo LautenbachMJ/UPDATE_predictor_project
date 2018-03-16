@@ -1,0 +1,40 @@
+morning:
+
+parser (scratch_20180227.py) file contains a fully (up to my knowledge and testing):
+    1.  parser function that parses the input file in three seperate lists (ID,SEQ,TOP)
+    2.  a sliding window that slides along the aa sequence (SEQ) with a defined
+        (hardcoded) windowsize and saves those windows
+    3. the windows are the input for the aa (char->num) encoding and (num->bi) one hot encoding
+    4. TOP list is is input for the top (char->num) encoding and (num->bi) one hot encoding
+    5. saving of both one hot encoding outputs (lists) into a np.array file
+    6. np array file can be used as svm/sklearn input
+    
+after lunch:
+
+seq encoder did not
+aa_integer encoder needed temporary list because it did not merge all windows for each sequence together
+
+
+code for sliding window was wrong - seq_win_list =[] had to be outside the for loop, otherwise it created a new list with every loop
+ -> result: len(top)=len(seq)
+ 
+because I added a "0" to the aa map, I had to adjust my onehot encoder with "-1":
+# seq one hot encode 
+    aa_onehot_encoded = list()
+    for element in SEQ_num:
+        temp_list = []
+        for char in element:
+            #if char ==  '0':
+            letter = [0 for _ in range(len(aa) - 1)]
+            if char != 0: 
+                letter[char-1] = 1
+            else:
+                pass
+            temp_list.extend(letter)
+        aa_onehot_encoded.append(temp_list)
+        
+
+output of both 
+    
+    
+    

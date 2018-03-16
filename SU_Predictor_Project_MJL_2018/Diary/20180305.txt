@@ -1,0 +1,7 @@
+today I wrote all key steps into seperate functions an got rid of the global function,
+there is still a problem with the one hot encoder - the first window is not separated, might hav something to do with my aa map that includes a 0. 
+
+seems to work for now:
+parser, encoder, file saving, training, cross-val, model saving, read-in of new sequence to predict its topology
+
+to do: fixing the on hot encoder problem, play with the svm parameters, testing on proteinsequences from swissprot

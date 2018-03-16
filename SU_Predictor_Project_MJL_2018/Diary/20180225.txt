@@ -1,0 +1,21 @@
+thought: manual one hot encoder better than automatic one hot encoder because if training sequence is lacking a value (aa) it cannot 
+predict it in the test run
+
+one hot encoder tutorial: https://machinelearningmastery.com/how-to-one-hot-encode-sequence-data-in-python/
+
+
+i figured out why the integer encoder for the input data gave me a KeyError;
+it wrongly looked for char in data instead of elements.
+ 
+rigth code:
+#integer encode input data
+    for element in data:
+        for char in element:
+            integer_encoded = [char_to_int[char] for char in element]
+    print(integer_encoded)
+
+With that change, the one hot encoder takes the input from the parser (still a dictionary) and converts it into binary numbers.
+Task for tomorrow, monday 26th of february: parser output a list with ID, SEQ and TOP instead of a dictionary (because it returns randomly), one hot encoder for topoplogy and the sliding window.
+
+
+julius

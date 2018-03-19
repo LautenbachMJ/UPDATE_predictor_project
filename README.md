@@ -14,6 +14,9 @@ Just copy/paste the path+file name  the to the provided spot in line 17 (comment
 Both the prediction results and the accurary scoring/calculation were saved as seperate files in the output directory (*../output/topology_prediction_accuracy_50UNTOUCHED.txt or 50_UNTOUCHED_proteins19predictor_accuracy_results.txt*) 
 
 
+**Prediction optimisation** were conducted by using the following file in the scripts directory with different parameter modifications:
+*svm_model_creator_optimisation.py, grid_search.py*
+
 
 **The PSSM based predictor** is unfortunately unfinished/not working, because I realised that I was working with the wrong dataset until a few days ago. With the wrong dataset, the PSSM predictor was working. Anyway, the PSSM based model creator does not work because of an error in the parsing step of the PSSMs.
 The PSSMs can found by following this path: 

@@ -1,4 +1,4 @@
-'''from maria'''
+'''Maximilian Julius Lautenbach'''
 #import sys 
 #sys.path.insert(0,"../../codes") #if script is not in the same directory
 import numpy as np
@@ -56,6 +56,8 @@ def readin_pssm(window):
         print(ID)
         pssm = os.path.join('../datasets/PSSM_files/PSSMs/' + ID) #+ #'.fasta.pssm' #all pssm locationssms
         pssm_list_train.append(np.genfromtxt(ids, skip_header=3, skip_footer=5, usecols=range(22,42)))
+    #ERROR: file can't be found
+    
     
     X_train = pssm_list_train
     

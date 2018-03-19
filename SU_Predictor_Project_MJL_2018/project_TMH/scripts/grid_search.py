@@ -1,4 +1,4 @@
-'''thank you lucie '''
+'''Maximilian Julius Lautenbach '''
 import numpy as np
 import pandas as pd
 from sklearn.svm import SVC
